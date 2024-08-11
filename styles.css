@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    font-family: "Itim", cursive;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6em;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #000000; /* Optional: change text color of active link */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: #ffcc00; /* Indicator color */
+    position: absolute;
+    bottom: -10px; /* Position the indicator below the text */
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a.active::after {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.right a {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: 2px solid #333; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    color: #333; /* Text color */
+    background-color: transparent; /* Transparent background */
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /* Center text */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.right a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    color: #333; /* Text color on hover */
+    border-color: #ffcc00; /* Border color on hover */
+}
+/* Home Page */
+.home-container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.home-content {
+    text-align: center;
+    font-size: 70px;
+    margin: 0px;
+    color: #000000;
+}
+
+.image1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-medium {
+    font-size: 24px;
+    margin: 0px;
+    text-align: start;
+}
+.content-medium-center {
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;
+}
+
+.left {
+    flex: 1;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.right a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Study Page */
+.study-container {
+    text-align: center;
+    padding: 50px;
+    font-size: 80px;
+    color: #000000;
+}
+
+/* About Us Page */
+.aboutus-container {
+    padding: 20px;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.top-row img, .member-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+.member-list {
+    display: flex;
+    justify-content: sta;
+    flex-wrap: wrap;
+}
+
+.member-list img {
+    margin: 10px;
+    max-width: 150px;
+    height: auto;
+}
